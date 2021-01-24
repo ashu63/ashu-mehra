@@ -5,7 +5,70 @@ body{
   line-height: 1.6;
   overflow-x: hidden !important;
   width: 100% !important;
+
 }
+#container{
+  width: 100vw;
+  height: 100vh;
+  background: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg{
+  fill: #fff;
+  width: 70%;
+}
+#cursor{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  transition: 0.2s;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: cursoranim .5s infinite alternate;
+  z-index: 999;
+}
+#cursor::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 8px solid rgb(255, 119, 119);
+  border-radius: 50%;
+  opacity: .5;
+  top: -5px;
+  left: -5px;
+  animation: cursoranim2 .5s infinite alternate ;
+  z-index: 999;
+}
+
+
+@keyframes cursoranim{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(.7);
+  }
+}
+@keyframes cursoranim2{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
 *{
   margin: 0;
   scroll-behavior: smooth;
@@ -20,6 +83,8 @@ section{
   background-color: #100e17;
   height: 100vh;
   color: white;
+  cursor:none;
+
 }
 .navbar{
   display: flex;
@@ -31,7 +96,7 @@ section{
   font-family: 'Redressed', cursive;
   transition: .5s;
   font-size: 30px;
-  cursor: pointer;
+  cursor: none;
   min-width: 150px;
 }
 .navbar__left > h3 > span{
@@ -57,6 +122,7 @@ section{
   color: rgb(214, 214, 214);
   font-size: 18px;
   letter-spacing: 1.8px;
+  cursor: none;
 }
 
 @keyframes hvr-wobble-horizontal {
@@ -175,6 +241,7 @@ section{
   align-items: center;
   height: 110vh;
   flex-wrap: wrap;
+  cursor: url(images/mouse.svg), default;
 }
 #ashu{
   transition-duration: 0.3s;
@@ -219,6 +286,8 @@ section{
   place-items: center;
   height: 110vh;
   flex-wrap: wrap;
+
+  
 }
 .section__threeContainer{
  display: flex;
@@ -1079,12 +1148,97 @@ color: white;
 .fa-angle-right{
 position: absolute;
 bottom: 120px;
-/* margin-top: 18px !important; */
 color: white !important;
 font-size: 30px !important;
 border: 1px solid white;
 border-radius: 999px;
 padding: 4px 14px;
+}
+#photo{
+  margin-left: -500px;
+  opacity: 0;
+}
+#photo.show{
+  margin-left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+.section__threeContainer{
+  opacity: 0;
+  margin-top: 300px;
+  transform: translateY(0);
+
+}
+.section__threeContainer.threeContainer{
+  opacity: 1;
+  margin-top: 0;
+  transition: .9s;
+  transform: translateY(-20px);
+}
+.heading__trans{
+  margin-left: 200px;
+  opacity: .01;
+}
+.heading__trans.heading__trans1{
+  margin-left: 0;
+  opacity: 1;
+  transition: 1s;
+}
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+.someanimation{
+  position: relative;
+}
+.someanimation::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.someanimation.someanimation1::after{
+  transition: 1.8s;
+  height: 0%;
+}
+@keyframes rotation {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.wave{
+  height: 100vh;
+  background-color: darkblue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.wave > h1 {
+  position: relative;
+  z-index: 10;
+  font-size: 60px;
+  max-width: 700px;
+  margin-bottom: 22px;
+}
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 602px){
@@ -1561,6 +1715,11 @@ margin-top: 40px;
 margin-top: 30px;
 margin-bottom: 20px;
 }
+.wave > h1 {
+  font-size: 27px;
+  max-width: 700px;
+  margin-bottom: 22px;
+}
 }
 
 
@@ -1940,6 +2099,13 @@ margin-top: 2vh;
 .newCard > i{
 margin-top: 30px;
 margin-bottom: 20px;
+}
+.wave > h1 {
+  position: relative;
+  z-index: 10;
+  font-size: 30px;
+  max-width: 700px;
+  margin-bottom: 22px;
 }
 }
 
@@ -2323,6 +2489,13 @@ margin-top: 2vh;
 margin-top: 30px;
 margin-bottom: 20px;
 }
+.wave > h1 {
+  position: relative;
+  z-index: 10;
+  font-size: 35px;
+  max-width: 700px;
+  margin-bottom: 22px;
+}
 }
 
 
@@ -2330,6 +2503,7 @@ margin-bottom: 20px;
 body{
   overflow-x: hidden !important;
   width: 100% !important;
+  max-width: 100% !important;
 }
 .navbar__right{
   display: none;
@@ -2578,6 +2752,13 @@ body{
 }
 .newCard > i{
   margin-top: 20px;
+}
+.wave > h1 {
+  position: relative;
+  z-index: 10;
+  font-size: 30px;
+  max-width: 700px;
+  margin-bottom: 22px;
 }
 }
 
