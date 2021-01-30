@@ -1,13 +1,12 @@
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 3500);
+  myVar = setTimeout(showPage, 3000);
 }
 
 function showPage() {
-  document.getElementById("home").style.display = "block";
-
   document.getElementById("container").style.display = "none";
+  document.getElementById("home").style.display = "block";
 }
 
 var elemets = document.querySelector('svg').children;
@@ -21,7 +20,6 @@ anime({
   delay: anime.stagger(200, {grid: [16,10], from: 7}),
   loop: true
 })
-
 
 const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
 wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
@@ -130,12 +128,72 @@ new ScrollMagic.Scene({
 })
     .setClassToggle('.heading__trans','heading__trans1') 
     .addTo(controller);
+
 new ScrollMagic.Scene({
   triggerElement: ".someanimation"
 })
     .setClassToggle('.someanimation','someanimation1') 
     .addTo(controller);
 
+new ScrollMagic.Scene({
+  triggerElement: ".five__containers1"
+})
+    .setClassToggle('.five__containers1','five__containersAnim') 
+    .addTo(controller);
 
+new ScrollMagic.Scene({
+  duration: 1000, // the scene should last for a scroll distance of 100px
+  offset: 0, // start this scene after scrolling for 50px
+  triggerElement: ".wave__data"
+})
+    .setClassToggle('.wave__data','wave__dataAnim') 
+    .addTo(controller);
 
+    new ScrollMagic.Scene({
+      duration: 1000, 
+      offset: 0, 
+      triggerElement: ".more__skills1"
+    })
+        .setClassToggle('.more__skills1','more__skills1Anim') 
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      duration: 1000, 
+      offset: 10, 
+      triggerElement: ".more__skills2"
+    })
+        .setClassToggle('.more__skills2','more__skills2Anim') 
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      duration: 1000, 
+      offset: 30, 
+      triggerElement: ".more__skills3"
+    })
+        .setClassToggle('.more__skills3','more__skills3Anim') 
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      duration: 1000, 
+      offset: 40, 
+      triggerElement: ".more__skills4"
+    })
+        .setClassToggle('.more__skills4','more__skills4Anim') 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+          duration: 1000, 
+          triggerElement: ".nine__heading1"
+        })
+            .setClassToggle('.nine__heading1','nine__heading1Anim') 
+            .addTo(controller);
+    
+        new ScrollMagic.Scene({
+          duration: 1000, 
+          triggerElement: ".images__parent1"
+        })
+            .setClassToggle('.images__parent1','images__parent1Anim') 
+            .addTo(controller);
+
+    
 
