@@ -119,11 +119,15 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
+  duration:1000,
+  // offset:-100,
   triggerElement: ".section__threeContainer"
 })
     .setClassToggle('.section__threeContainer','threeContainer') 
     .addTo(controller);
 new ScrollMagic.Scene({
+  offset:0,
+
   triggerElement: ".heading__trans"
 })
     .setClassToggle('.heading__trans','heading__trans1') 
@@ -149,37 +153,6 @@ new ScrollMagic.Scene({
     .setClassToggle('.wave__data','wave__dataAnim') 
     .addTo(controller);
 
-    new ScrollMagic.Scene({
-      duration: 1000, 
-      offset: 0, 
-      triggerElement: ".more__skills1"
-    })
-        .setClassToggle('.more__skills1','more__skills1Anim') 
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-      duration: 1000, 
-      offset: 10, 
-      triggerElement: ".more__skills2"
-    })
-        .setClassToggle('.more__skills2','more__skills2Anim') 
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-      duration: 1000, 
-      offset: 30, 
-      triggerElement: ".more__skills3"
-    })
-        .setClassToggle('.more__skills3','more__skills3Anim') 
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-      duration: 1000, 
-      offset: 40, 
-      triggerElement: ".more__skills4"
-    })
-        .setClassToggle('.more__skills4','more__skills4Anim') 
-        .addTo(controller);
 
         new ScrollMagic.Scene({
           duration: 1000, 

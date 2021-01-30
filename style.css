@@ -1259,42 +1259,7 @@ padding: 4px 14px;
   transition: .7s ease-in;
   opacity: 1;
 }
-.more__skills1{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills1.more__skills1Anim{
-  margin-left: 170px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills2{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills2.more__skills2Anim{
-  margin-left: 0px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills3{
-  margin-right: 300px;
-  opacity: 0;
-}
-.more__skills3.more__skills3Anim{
-  margin-right: 0px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills4{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills4.more__skills4Anim{
-  margin-left: 0px;
-  transition: 1s;
-  opacity: 1;
-}
+
 .nine__heading1{
   padding-top: 300px;
   opacity: 0;
@@ -2184,8 +2149,8 @@ margin-bottom: 20px;
 }
 
 #photo{
-  margin-left: -100px;
-  opacity: 0;
+  margin-left: 0px;
+  opacity: 1;
 }
 #photo.show{
   margin-left: 0px;
@@ -2193,155 +2158,39 @@ margin-bottom: 20px;
   transition: 1s;
 }
 .section__threeContainer{
-  opacity: 0;
-  margin-top: 100px;
+  opacity: 1;
+  margin-top: 0px;
   transform: translateY(0);
 
 }
-.section__threeContainer.threeContainer{
-  opacity: 1;
-  margin-top: 0;
-  transition: .9s;
-  transform: translateY(-20px);
-}
 .heading__trans{
-  margin-left: 200px;
-  opacity: .01;
-}
-.heading__trans.heading__trans1{
-  margin-left: 0;
+  margin-left: 0px;
   opacity: 1;
-  transition: 1s;
-}
-.rotate {
-  animation: rotation 4s infinite linear;
-}
-.someanimation{
-  position: relative;
-}
-.someanimation::after{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255);
-}
-.someanimation.someanimation1::after{
-  transition: 1.8s;
-  height: 0%;
-}
-@keyframes rotation {
-  0% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(-50px);
-  }
-}
-.wave{
-  height: 100vh;
-  background-color: darkblue;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-.wave > h1 {
-  position: relative;
-  z-index: 10;
-  font-size: 60px;
-  max-width: 700px;
-  margin-bottom: 22px;
-}
-.wave-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
+
 .five__containers1{
-  margin-left: 450px;
-  opacity: 0;
-}
-.five__containers1.five__containersAnim{
   margin-left: 0px;
-  transition: 1s ease;
   opacity: 1;
 }
+
 .wave__data{
-  padding-top: 400px;
-  opacity: 0;
-}
-.wave__data.wave__dataAnim{
-  padding-top: 0;
-  transition: .7s ease-in;
+  padding-top: 0px;
   opacity: 1;
 }
-.more__skills1{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills1.more__skills1Anim{
-  margin-left: 170px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills2{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills2.more__skills2Anim{
-  margin-left: 0px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills3{
-  margin-right: 300px;
-  opacity: 0;
-}
-.more__skills3.more__skills3Anim{
-  margin-right: 0px;
-  transition: 1s;
-  opacity: 1;
-}
-.more__skills4{
-  margin-left: 300px;
-  opacity: 0;
-}
-.more__skills4.more__skills4Anim{
-  margin-left: 0px;
-  transition: 1s;
-  opacity: 1;
-}
+
+
+
 .nine__heading1{
-  padding-top: 300px;
-  opacity: 0;
-}
-.nine__heading1.nine__heading1Anim{
+  padding-top: 0px;
   opacity: 1;
-  padding-top: 0;
-  transition: .9s;
 }
+
 .images__parent1{
-  margin-left: 800px;
-  opacity: 0;
-}
-.images__parent1.images__parent1Anim{
-  transition: 1s;
+  margin-left: 0px;
   opacity: 1;
-  margin-left: 0;
 }
+
 
 
 
