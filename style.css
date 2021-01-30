@@ -1361,6 +1361,43 @@ body{
   font-size: 14px;
   max-width: 250px;
 }
+
+#photo{
+  margin-left: 0px;
+  opacity: 1;
+}
+#photo.show{
+  margin-left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+.section__threeContainer{
+  opacity: 1;
+  margin-top: 0px;
+  transform: translateY(0);
+
+}
+.heading__trans{
+  margin-left: 0px;
+  opacity: 1;
+}
+.five__containers1{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.wave__data{
+  padding-top: 0px;
+  opacity: 1;
+}
+.nine__heading1{
+  padding-top: 0px;
+  opacity: 1;
+}
+.images__parent1{
+  margin-left: 0px;
+  opacity: 1;
+}
 }
 
 
@@ -1759,6 +1796,44 @@ margin-bottom: 20px;
   font-size: 27px;
   max-width: 700px;
   margin-bottom: 22px;
+}
+
+#photo{
+  margin-left: 0px;
+  opacity: 1;
+}
+#photo.show{
+  margin-left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+.section__threeContainer{
+  opacity: 1;
+  margin-top: 0px;
+  transform: translateY(0);
+
+}
+.heading__trans{
+  margin-left: 0px;
+  opacity: 1;
+}
+.five__containers1{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.wave__data{
+  padding-top: 0px;
+  opacity: 1;
+}
+.nine__heading1{
+  padding-top: 0px;
+  opacity: 1;
+}
+
+.images__parent1{
+  margin-left: 0px;
+  opacity: 1;
 }
 }
 
@@ -2191,18 +2266,6 @@ margin-bottom: 20px;
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (min-height: 800px){
@@ -2592,6 +2655,46 @@ margin-bottom: 20px;
   max-width: 700px;
   margin-bottom: 22px;
 }
+
+#photo{
+  margin-left: 0px;
+  opacity: 1;
+}
+#photo.show{
+  margin-left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+.section__threeContainer{
+  opacity: 1;
+  margin-top: 0px;
+  transform: translateY(0);
+
+}
+.heading__trans{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+
+.five__containers1{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.wave__data{
+  padding-top: 0px;
+  opacity: 1;
+}
+
+.nine__heading1{
+  padding-top: 0px;
+  opacity: 1;
+}
+.images__parent1{
+  margin-left: 0px;
+  opacity: 1;
+}
 }
 
 
@@ -2855,6 +2958,43 @@ body{
   font-size: 30px;
   max-width: 700px;
   margin-bottom: 22px;
+}
+
+#photo{
+  margin-left: 0px;
+  opacity: 1;
+}
+#photo.show{
+  margin-left: 0px;
+  opacity: 1;
+  transition: 1s;
+}
+.section__threeContainer{
+  opacity: 1;
+  margin-top: 0px;
+  transform: translateY(0);
+
+}
+.heading__trans{
+  margin-left: 0px;
+  opacity: 1;
+}
+.five__containers1{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.wave__data{
+  padding-top: 0px;
+  opacity: 1;
+}
+.nine__heading1{
+  padding-top: 0px;
+  opacity: 1;
+}
+.images__parent1{
+  margin-left: 0px;
+  opacity: 1;
 }
 }
 
